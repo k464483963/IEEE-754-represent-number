@@ -14,7 +14,7 @@ int main(int argc, char *argv[]){
 	
 	unsigned long newLong;
 
-	newLong = parseNum(argv[TWO_COMMAND]);
+	newLong = parseNum(argv);
 
 	ieeeParts_t newFill;
 
@@ -25,9 +25,5 @@ int main(int argc, char *argv[]){
 	printf(EXP_STR,newFill.exp);
 
 	printf(MANTISSA_STR,newFill.mantissa);
-
-	unsigned int newInt = (int)newLong;
-
-	printf(DECIMAL_STR,newInt);
 
 } 
