@@ -1,0 +1,75 @@
+/*
+ * Filename: README
+ * Author: HanJie Zhan
+ * UserId: cs30s120cg
+ * Date:07/05/2020
+ * Sources of help: none.
+ */
+
+Description
+-----------
+	This project can get the hexadecimal given by the user, then convert
+the hexadecimal to IEEE-754 floating point number and display the the sign
+bit part, exponent part, and mantissa part. 
+
+How to compile
+-----------
+    To compile this project, simply log in ucsd account in the terminal. 
+enter the pa3 directory which include the Makefile and type "make filename"
+
+How to run
+-----------
+  To run fpdec project, if enter less or greater than two argument then display
+the INVALID_ARGS and SHORT_USAGE message. if the user enter two argument, then 
+need to follow the format, type the"./executableName HexadecimalNumber". for 
+example, ./fpdec 0x41260000. Or the user can run the unit test files. like 
+simple tyoe"./testfileName", for example, "./testparseNum"
+
+Normal output
+-----------
+    The normal output would  print the IEEE-754 floating number representation
+ by sign, exponent, and mantissa.  An example of normal output would be the 
+following: 
+cs30s120cg@pi-cluster-037:~/pa3$ ./fpdec 0x41260000
+Sign Bit: 0
+Unbiased Exponent: 3
+Mantissa: a60000
+
+Abnormal output
+-----------
+    Abnormal output is printed to stderr. If the user enter more than or less 
+than two argument. then the error messege would display. the example would be
+ the follow:
+cs30s120cg@pi-cluster-037:~/pa3$ ./fpdec           
+Incorrect number of arguments.
+
+Usage ./fpdec {hexString}
+
+cs30s120cg@pi-cluster-037:~/pa3$ ./fpdec 0x41260000 0x233
+Incorrect number of arguments.
+
+Usage ./fpdec {hexString}
+
+
+Testing
+-----------
+If the user enter more than or less 
+than two argument. then the error messege would display:
+
+cs30s120cg@pi-cluster-037:~/pa3$ ./fpdec           
+Incorrect number of arguments.
+
+Usage ./fpdec {hexString}
+
+cs30s120cg@pi-cluster-037:~/pa3$ ./fpdec 0x41260000 0x233
+Incorrect number of arguments.
+
+Usage ./fpdec {hexString}
+
+PA Question
+-----------
+1)Please follow the integrity rule. Do not cheet yourself. ask plazza if you 
+have any question.
+2)I have filled out my CAPE response
+
+

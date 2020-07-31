@@ -16,10 +16,10 @@
 	.global  extractParts			@ make main global for linking
 
 extractParts:
-	push     {r5,r4,fp,lr}		@ stack frame register save
+	push     {r4,r5,fp,lr}		@ stack frame register save
 	add      fp,sp, FP_OFFSET	@ locate our frame pointer
 
-	lsl r4,r0,31
+	lsr r4,r0,31
 	strb r4,[r1,0]
 
 	lsr  r4,r0,23
@@ -33,7 +33,7 @@ extractParts:
 
 
 	sub	 sp,fp,FP_OFFSET	@ restore stack frame top
-	pop	 {r5,r4,fp,lr}		@ remove stack frame and restore
+	pop	 {r4,r5,fp,lr}		@ remove stack frame and restore
 	bx  	 lr			@ return to calling function
 
 .end
