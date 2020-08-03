@@ -1,7 +1,10 @@
 /*
  * File: pa3.h
  * TODO Complete Header
- *
+ * Author: HanJie Zhan
+ * UserId: cs30s120cg
+ * Date:07/05/2020
+ * Sources of help: none.
  *
  * Description: Header file that contains function prototypes and constants
  *

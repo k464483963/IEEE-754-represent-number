@@ -1,4 +1,12 @@
 /*
+ * Filename: pa3Strings.h
+ * Author: HanJie Zhan
+ * UserId: cs30s120cg
+ * Date:07/18/2020
+ * Sources of help: none
+ */
+
+/*
  * File: pa3Strings.h
  * Description: Header file containing strings that are displayed to the user.
  *

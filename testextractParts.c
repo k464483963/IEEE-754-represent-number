@@ -1,10 +1,10 @@
 /*
- * Filename: testhash
- * Author: TODO
- * Userid: TODO
- * Description: Unit test program to test the function hash().
- * Date: TODO
- * Sources of Help: TODO
+ * Filename: testextractParts.c
+ * Author: HanJie Zhan
+ * UserId: cs30s120cg
+ * Description: Unit test program to test the function extractParts();
+ * Date:07/18/2020
+ * Sources of help: tutors
  */
 
 #include <string.h>
@@ -14,14 +14,17 @@
 #include "pa3.h"
 
 /*
- * Unit Test for hash.c
+ * Unit Test for extractParts.c
  *
- * unsigned int hash( char * src );
- *
+ * void extractParts( unsigned long ieeeBin, ieeeParts_t * fill );
+ * *
  */
 void testextractParts() {
-	ieeeParts_t fill;
-       extractParts(0x41260000,&fill);	
+
+	ieeeParts_t fill;//access struct fill memeber
+
+       extractParts(0x41260000,&fill);//pass in argument
+
         TEST( fill.sign == 0);
 	TEST ( fill.exp == 3);
 	TEST (fill.mantissa ==10878976);
